@@ -43,4 +43,7 @@ const Issues = async () => {
   )
 }
 
+export const dynamic = 'force-dynamic'
+// export const revalidate = 30
+
 export default Issues
