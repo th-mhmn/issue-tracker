@@ -10,6 +10,7 @@ const IssueDetailsPage = async ({ params }: { params: { id: string } }) => {
     where: { id: parseInt(params.id) },
   })
   if (!issue) notFound()
+
   return (
     <div>
       <Heading>{issue?.title}</Heading>

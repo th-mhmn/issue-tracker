@@ -1,7 +1,6 @@
 import React from 'react'
 import IssuesActions from './IssuesActions'
 import { Table, TableColumnHeaderCell } from '@radix-ui/themes'
-import IssueStatusBadge from '../components/IssueStatusBadge'
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
