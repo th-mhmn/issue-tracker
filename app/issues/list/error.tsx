@@ -1,8 +1,7 @@
 'use client'
 
-import React from 'react'
+import ErrorMessage from '@/app/components/ErrorMessage'
 import IssuesActions from './IssuesActions'
-import ErrorMessage from '../components/ErrorMessage'
 
 const error = () => {
   return (

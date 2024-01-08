@@ -11,7 +11,7 @@ const NavBar = () => {
     { label: 'Dashboard', href: '/dashboard' },
     {
       label: 'Issues',
-      href: '/issues',
+      href: '/issues/list',
     },
   ]
 
