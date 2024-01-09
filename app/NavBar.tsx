@@ -58,6 +58,7 @@ const NavBar = () => {
                     size="2"
                     src={session.user!.image!}
                     fallback="?"
+                    referrerPolicy="no-referrer"
                   />
                 </DropdownMenu.Trigger>
                 <DropdownMenu.Content>
