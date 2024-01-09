@@ -3,9 +3,12 @@ import classnames from 'classnames'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { FaBug } from 'react-icons/fa'
+import { useSession } from 'next-auth/react'
+import { Box } from '@radix-ui/themes'
 
 const NavBar = () => {
   const currentPath = usePathname()
+  const { status, data: session } = useSession()
 
   const links = [
     { label: 'Dashboard', href: '/dashboard' },
@@ -34,6 +37,13 @@ const NavBar = () => {
           </li>
         ))}
       </ul>
+      <Box>
+        {status === 'authenticated' ? (
+          <Link href="/api/auth/signout">Sign Out</Link>
+        ) : (
+          <Link href="/api.auth/sighin">Login</Link>
+        )}
+      </Box>
     </nav>
   )
 }
