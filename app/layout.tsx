@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <AuthProvider>
         <body className={inter.variable}>
-          <Theme accentColor="yellow" grayColor="gray">
+          <Theme appearance="light" accentColor="yellow" grayColor="gray">
             <NavBar />
             <main className="p-5">
               <Container>{children}</Container>
