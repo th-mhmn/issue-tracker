@@ -1,9 +1,17 @@
 import Pagination from './components/Pagination'
 
-export default function Home() {
+export default function Home({
+  searchParams,
+}: {
+  searchParams: { page: string }
+}) {
   return (
     <div>
-      <Pagination currentPage={1} pageSize={4} itemsCount={23} />
+      <Pagination
+        currentPage={parseInt(searchParams.page)}
+        pageSize={4}
+        itemsCount={23}
+      />
     </div>
   )
 }
